@@ -6,3 +6,23 @@ body {
 .menu .app-brand.demo {
   height: 150px;
 }
+[dir=rtl] .me-3 {
+  margin-left: 0.5rem !important;
+}
+.bg-menu-theme .menu-inner-shadow{
+  background: none;
+}
+.bg-menu-theme .menu-inner > .menu-item.active > .menu-link {
+  color: #6b5039;
+}
+.bg-menu-theme .menu-inner > .menu-item.active > .menu-link {
+  background-color: rgb(207 212 215) !important;
+}
+.footer {
+   
+  border-top: 1px solid #ddd;
+  margin-top: auto;
+  font-size: 12px;
+  background-color: #581b07;
+  color: #fff;
+}
