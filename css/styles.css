@@ -71,3 +71,26 @@ body {
     background-color: #581b07;
     color: #fff;
 }
+@media(max-width:992px){
+    .app-text{
+        font-size: 22px;
+        
+    }
+    .svu-text{
+        font-size: 18px;
+       
+    }
+    .img-fluid{
+        max-width: 50%;
+    }
+}
+@media (min-width: 768px) {
+    .container, .container-md, .container-sm {
+        max-width: 100%;
+    }
+}
+@media (min-width: 576px) {
+    .container, .container-sm {
+        max-width: 90%;
+    }
+}

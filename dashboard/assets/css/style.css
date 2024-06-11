@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'GE SS Two';
-    src: url('../font/GE_SS_Two.otf') format('opentype');
+    src: url('../vendor/fonts/boxicons/GE_SS_Two.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -18,12 +18,17 @@ body {
     font-family: 'GE SS Two', sans-serif;
 }
 .app-text{
-    font-size: 28px;
+    font-size: 20px;
     color: #581b07;
 }
 .svu-text{
-    font-size: 24px;
+    font-size: 16px;
+    padding-right: 10px;
     color:#17154b;
+}
+.user-info{
+    display: flex;
+    
 }
 .card {
     background: rgba(255, 255, 255, 0.9);
@@ -48,6 +53,7 @@ body {
     align-self: center; /* Center horizontally in the flex container */
     margin-top: auto; /* Pushes the element to center vertically */
     margin-bottom: auto; 
+    color: white;
 }
 .card-body{
     width: 100%;
@@ -65,7 +71,7 @@ body {
     width: 100%;   
     
 }
-.card-counter,.card-link:link{
+.card-counter,a.card-link{
     font-size: 18px;
     font-style: normal;
     color: #fff;
@@ -161,21 +167,36 @@ body {
         flex: 0 0 50%; 
         max-width: 50%; 
     }
-    /* .col-sm-6 {
-        -ms-flex: 0 0 33.3333%;
-        flex: 0 0 33.3333%;
-        max-width: 33.3333%;
-    } */
+    
 }
-
+@media (max-width: 767px) {
+    .app-text{
+        font-size: 14px;
+      
+    }
+    .svu-text{
+        font-size: 10px;
+        
+}
+}
 @media (max-width: 575px) {
-    body, .container, .row, .card {
+    /* body, .container, .row, .card {
         text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
+    } */
     .card {
-        width: 100%; /* Adjust width to ensure it's not too wide on small screens */
+        width: 90%; /* Adjust width to ensure it's not too wide on small screens */
+        left: 5%;
+        right: 5%;
+    }
+}
+@media(max-width:528px){
+    .col-logo{
+        display: none;
+    }
+    .col-text{
+        width: 75%;
     }
 }
