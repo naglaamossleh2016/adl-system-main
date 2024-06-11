@@ -1,0 +1,181 @@
+@font-face {
+    font-family: 'GE SS Two';
+    src: url('../font/GE_SS_Two.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    background-color: #fff;
+    font-family: 'GE SS Two', sans-serif;
+    text-align: right;
+}
+.header {
+    background: #f2f1f0;
+    border-bottom: 1px solid #ddd;
+}
+.app-text,.svu-text {
+    margin: 0;
+    font-family: 'GE SS Two', sans-serif;
+}
+.app-text{
+    font-size: 28px;
+    color: #581b07;
+}
+.svu-text{
+    font-size: 24px;
+    color:#17154b;
+}
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    height: 250px; /* Fixed height */
+    width: 250px; /* Fixed width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    
+}
+.card-title{
+    font-size: 26px;
+    font-weight: normal;
+    align-self: center; /* Center horizontally in the flex container */
+    margin-top: auto; /* Pushes the element to center vertically */
+    margin-bottom: auto; 
+}
+.card-body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%; 
+    padding: 0.5rem 1.25rem;
+}
+.card-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: auto;
+    width: 100%;   
+    
+}
+.card-counter,.card-link:link{
+    font-size: 18px;
+    font-style: normal;
+    color: #fff;
+   
+}
+.card-link:hover{
+    text-decoration: underline;
+    color: #fff;
+}
+
+.form-control {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+.h4-login{
+    color:  #581b07;
+}
+.form-check-input{
+    margin-right: -1.25rem;
+}
+.btn-primary {
+    background-color: #581b07;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #434343;
+}
+
+.text-secondary {
+    color: #6c757d !important;
+}
+
+.text-danger {
+    color: #dc3545 !important;
+}
+
+.img-fluid {
+   max-width: 100%;
+    height:auto;
+}
+/* Specific card background colors */
+.card-1 {
+    background-color: #db5106; /* Teal */
+}
+
+.card-2 {
+    background-color: #267cb1; /* Purple */
+}
+
+.card-3 {
+    background-color: #7145a1; /* Blue */
+}
+
+.card-4 {
+    background-color: #236c6f; /* Orange */
+}
+
+.card-5 {
+    background-color: #58a1db /* Brown */
+}
+
+.card-6 {
+    background-color: #a0765a; /* Green */
+}
+
+.card-7 {
+    background-color: #25b145; /* Light Blue */
+}
+.footer {
+   
+    border-top: 1px solid #ddd;
+    margin-top: auto;
+    font-size: 12px;
+    background-color: #581b07;
+    color: #fff;
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+    .row {
+        justify-content: center; /* Center the cards horizontally */
+    }
+    .col-md-3 {
+        flex: 0 0 33.3333%; /* Each card takes up one-third of the row */
+        max-width: 33.3333%; /* Prevents the cards from exceeding one-third width */
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .row {
+        justify-content: center; /* Center the cards horizontally */
+    }
+    .col-md-3 {
+        flex: 0 0 50%; 
+        max-width: 50%; 
+    }
+    /* .col-sm-6 {
+        -ms-flex: 0 0 33.3333%;
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+    } */
+}
+
+@media (max-width: 575px) {
+    body, .container, .row, .card {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 100%; /* Adjust width to ensure it's not too wide on small screens */
+    }
+}
